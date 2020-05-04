@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info version="1.1">
+  <general>
+    <createDate>2017-11-14T08:44:48</createDate>
+    <changeDate>2017-11-14T08:44:48</changeDate>
+    <schema>iso19139</schema>
+    <isTemplate>false </isTemplate>
+    <!-- <localId>196850</localId> -->
+    <format>full</format>
+    <!-- <rating>0</rating> -->
+    <!-- <popularity>1</popularity> -->
+    <uuid>0d5e254a-35f9-40f2-8dc7-a9f7f550ecec</uuid>
+    <siteId>bbdcc84e-cb69-44ae-bdb9-ff372d501492</siteId>
+    <siteName>geo.be Metadata Catalog</siteName>
+  </general>
+  <categories>
+    <category name="" />
+  </categories>
+  <privileges>
+    <group name="NGI-SDI" groupOwner="true">
+      <operation name="view" />
+      <operation name="download" />
+      <operation name="dynamic" />
+      <operation name="featured" />
+      <operation name="notify" />
+      <operation name="editing" />
+    </group>
+  </privileges>
+  <public />
+  <private />
+</info>
+

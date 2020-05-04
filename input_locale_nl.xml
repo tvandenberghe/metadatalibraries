@@ -1,0 +1,8 @@
+<gmd:locale>
+  <gmd:PT_Locale id="NL">
+    <gmd:languageCode>
+      <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut" />
+    </gmd:languageCode>
+    <gmd:characterEncoding />
+  </gmd:PT_Locale>
+</gmd:locale>
