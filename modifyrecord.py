@@ -24,6 +24,7 @@ import crawlthesaurus
 import re
 import secrets
 from CSWRecord import CSWRecord
+from secrets import gn_username, gn_password, csw_discovery, csw_publication
 
 
 class modifyrecord(object):
@@ -323,10 +324,10 @@ class modifyrecord(object):
     def main():
         # gn_username = raw_input("GeoNetwork username: ")
         # gn_password=getpass.getpass("GeoNetwork password: ")
-        cswconnexion = geonetworkconnexion2.CSWConnexion(gn_username=modifyrecord.gn_username,
-                                                         gn_password=modifyrecord.gn_password,
-                                                         csw_discovery_url=modifyrecord.csw_discovery,
-                                                         csw_publication_url=modifyrecord.csw_publication)
+        cswconnexion = geonetworkconnexion2.CSWConnexion(gn_username=secrets.gn_username,
+                                                         gn_password=secrets.gn_password,
+                                                         csw_discovery_url=secrets.csw_discovery,
+                                                         csw_publication_url=secrets.csw_publication)
 
         mr = modifyrecord(cswconnexion)
         mr.init_rdf()
