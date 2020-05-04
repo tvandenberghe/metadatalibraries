@@ -196,5 +196,5 @@ class CSWConnexion(object):
         #publishedrecord=urlopen(f.url)
         tree = etree.fromstring(publishedrecord)
         #tree=etree.parse(str(publishedrecord))
-       # root=tree.getroot()[0]
-        return tree
+        root=tree[0]
+        return root

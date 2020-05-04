@@ -365,31 +365,14 @@ class modifyrecord(object):
         ## mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'], fro='<gmd:PT_FreeText />', to='') #do a hard textual replace and not a node replace
         ## mr.modify_records_attribute(do_when_keyword=['Reporting INSPIRE'],xpath="//*[@xsi:type='gmd:PT_FreeText_PropertyType']",attribute='xsi:type',value='') #set all values of the xsi:type attribute to empty, effectively deleting it
         #mr.remove_records_xpath(do_when_keyword=['Reporting INSPIRE','Federal government'], xpath="//srv:coupledResource") #srv:coupledResource is not needed
-
-
-        mr.append_record_at(id="29f40b0d-2a3e-49a8-870a-e9b4acd4d1e3", xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification",
-                             before="descriptiveKeywords")
-        mr.append_record_at(id="83bdcd87-e4ea-4a76-ab98-ff9f45e529f5",
-                            xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification",
-                            before="descriptiveKeywords")
-        mr.append_record_at(id="7b53a7db-eedb-4220-923a-94304c854e75",
-                            xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification",
-                            before="descriptiveKeywords")
-        mr.append_record_at(id="69a40ea3-868e-4f56-a6b2-b313e625ee22",
-                            xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification",
-                            before="descriptiveKeywords")
-        mr.append_record_at(id="7eca7c5e-f1da-4abb-aad3-acc5038bf5ba",
-                            xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification",
-                            before="descriptiveKeywords")
-        mr.append_record_at(id="d409cd5d-3a54-4722-b255-2b4d4374d8ae",
-                            xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification",
-                            before="descriptiveKeywords")
-        mr.append_record_at(id="ee056fd6-995e-40a7-8ebf-b145ea0a30e0",
-                            xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification",
-                            before="descriptiveKeywords")
-        mr.append_record_at(id="8b317fed-fd7e-4374-a378-4831ff458c09",
-                            xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification",
-                            before="descriptiveKeywords")
+        #mr.append_record_at(id="29f40b0d-2a3e-49a8-870a-e9b4acd4d1e3", xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification", before="descriptiveKeywords")
+        #mr.append_record_at(id="83bdcd87-e4ea-4a76-ab98-ff9f45e529f5", xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification", before="descriptiveKeywords")
+        #mr.append_record_at(id="7b53a7db-eedb-4220-923a-94304c854e75", xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification", before="descriptiveKeywords")
+        #mr.append_record_at(id="69a40ea3-868e-4f56-a6b2-b313e625ee22", xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification", before="descriptiveKeywords")
+        #mr.append_record_at(id="7eca7c5e-f1da-4abb-aad3-acc5038bf5ba", xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification", before="descriptiveKeywords")
+        #mr.append_record_at(id="d409cd5d-3a54-4722-b255-2b4d4374d8ae", xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification", before="descriptiveKeywords")
+        #mr.append_record_at(id="ee056fd6-995e-40a7-8ebf-b145ea0a30e0", xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification", before="descriptiveKeywords")
+        #mr.append_record_at(id="8b317fed-fd7e-4374-a378-4831ff458c09", xml_snippet=mr.prep_input_file("input_marine_essentials.xml"), outer="identification", before="descriptiveKeywords")
 
         print('Finished updating GeoNetwork records')
 if __name__ == '__main__':

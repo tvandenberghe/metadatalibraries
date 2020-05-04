@@ -26,10 +26,11 @@ Make the following change in the file metadatalibraries/env/lib/python3.6/site-p
 Add the following in line 351:
  
     self._setconstraint(node1, None, propertyname, keywords, bbox, cql, identifier)
+    
+This ensures that request is adequately constrained to the metadata record with the specific id. This bug appeared to be absent when using python 2.7 (weird). Never mind, 3.6 is best.
 
 Make a copy of the file secrets.example.py, and name it secrets.py. Change the login credentials of your test and production environments accordingly. Under no circumstances upload system passwords to github. Meaning, do not ever change secrets.example.py or change anything inside .gitignore.
 
-This ensures that request is adequately constrained to the metadata record with the specific id. This bug appeared to be absent when using python 2.7 (weird). Never mind, 3.6 is best.
 
 ## Usage
 ### Updating records
