@@ -1,0 +1,6 @@
+<gmd:protocol>
+    <gco:CharacterString>OGC:WMS-1.3.0-http-get-capabilities</gco:CharacterString>
+</gmd:protocol>
+<gmd:function>
+        <gmd:CI_OnLineFunctionCode test test codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="view">view</gmd:CI_OnLineFunctionCode>
+</gmd:function>

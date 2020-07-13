@@ -1,0 +1,41 @@
+<gmd:descriptiveKeywords>
+  <gmd:MD_Keywords>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/ps">Protected sites</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Protected sites</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Sites protégés</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Beschermde gebieden</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Schutzgebiete</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:type>
+      <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+    </gmd:type>
+    <gmd:thesaurusName>
+      <gmd:CI_Citation>
+        <gmd:title>
+          <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+        </gmd:title>
+        <gmd:date>
+          <gmd:CI_Date>
+            <gmd:date>
+              <gco:Date>2008-06-01</gco:Date>
+            </gmd:date>
+            <gmd:dateType>
+              <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+            </gmd:dateType>
+          </gmd:CI_Date>
+        </gmd:date>
+      </gmd:CI_Citation>
+    </gmd:thesaurusName>
+  </gmd:MD_Keywords>
+</gmd:descriptiveKeywords>

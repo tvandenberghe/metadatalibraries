@@ -1,0 +1,602 @@
+<gmd:descriptiveKeywords>
+  <gmd:MD_Keywords>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Coordinate reference systems</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Coordinate reference systems</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Référentiels de coordonnées</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Systemen voor verwijzing door middel van coördinaten</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Koordinatenreferenzsysteme</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Elevation</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Elevation</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Altitude</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Hoogte</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Höhe</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Land cover</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Land cover</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Occupation des terres</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Bodemgebruik</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Bodenbedeckung</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Orthoimagery</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Orthoimagery</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Ortho-imagerie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Orthobeeldvorming</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Orthofotografie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/ge">Geology</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Geology</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Géologie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Geologie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Geologie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Statistical units</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Statistical units</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Unités statistiques</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Statistische eenheden</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Statistische Einheiten</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/bu">Buildings</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Buildings</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Bâtiments</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Gebouwen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Gebäude</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Soil</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Soil</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Sols</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Bodem</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Boden</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/lu">Land use</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Land use</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Usage des sols</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Landgebruik</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Bodennutzung</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Human health and safety</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Human health and safety</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Santé et sécurité des personnes</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Menselijke gezondheid en veiligheid</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Gesundheit und Sicherheit</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/us">Utility and governmental services</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Utility and governmental services</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Services d'utilité publique et services publics</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Nutsdiensten en overheidsdiensten</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Versorgungswirtschaft und staatliche Dienste</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Geographical grid systems</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Geographical grid systems</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Systèmes de maillage géographique</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Geografisch rastersysteem</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Geografische Gittersysteme</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/ef">Environmental monitoring facilities</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Environmental monitoring facilities</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Installations de suivi environnemental</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Milieubewakingsvoorzieningen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Umweltüberwachung</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Production and industrial facilities</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Production and industrial facilities</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Lieux de production et sites industriels</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Faciliteiten voor productie en industrie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Produktions- und Industrieanlagen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/af">Agricultural and aquaculture facilities</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Agricultural and aquaculture facilities</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Installations agricoles et aquacoles</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Faciliteiten voor landbouw en aquacultuur</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Landwirtschaftliche Anlagen und Aquakulturanlagen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Population distribution — demography</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Population distribution — demography</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Répartition de la population — démographie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Spreiding van de bevolking — demografie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Verteilung der Bevölkerung — Demografie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/am">Area management/restriction/regulation zones and reporting units</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Area management/restriction/regulation zones and reporting units</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Zones de gestion, de restriction ou de réglementation et unités de déclaration</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Gebiedsbeheer, gebieden waar beperkingen gelden, gereguleerde gebieden en rapportage-eenheden</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Bewirtschaftungsgebiete/Schutzgebiete/geregelte Gebiete und Berichterstattungseinheiten</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Natural risk zones</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Natural risk zones</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Zones à risque naturel</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Gebieden met natuurrisico'es</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Gebiete mit naturbedingten Risiken</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Atmospheric conditions</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Atmospheric conditions</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Conditions atmosphériques</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Atmosferische omstandigheden</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Atmosphärische Bedingungen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Meteorological geographical features</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Meteorological geographical features</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Caractéristiques géographiques météorologiques</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Meteorologische geografische kenmerken</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Meteorologisch-geografische Kennwerte</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/of">Oceanographic geographical features</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Oceanographic geographical features</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Caractéristiques géographiques océanographiques</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Oceanografische geografische kenmerken</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Ozeanografisch-geografische Kennwerte</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/sr">Sea regions</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Sea regions</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Régions maritimes</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Zeegebieden</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Meeresregionen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Bio-geographical regions</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Bio-geographical regions</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Régions biogéographiques</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Biogeografische gebieden</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Biogeografische Regionen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Geographical names</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Geographical names</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Dénominations géographiques</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Geografische namen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Geografische Bezeichnungen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/hb">Habitats and biotopes</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Habitats and biotopes</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Habitats et biotopes</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Habitats en biotopen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Lebensräume und Biotope</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Species distribution</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Species distribution</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Répartition des espèces</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Spreiding van soorten</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Verteilung der Arten</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Energy resources</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Energy resources</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Sources d'énergie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Energiebronnen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Energiequellen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Mineral resources</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Mineral resources</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Ressources minérales</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Minerale bronnen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Mineralische Bodenschätze</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Administrative units</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Administrative units</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Unités administratives</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Administratieve eenheden</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Verwaltungseinheiten</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Addresses</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Addresses</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Adresses</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Adressen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Adressen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Cadastral parcels</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Cadastral parcels</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Parcelles cadastrales</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Kadastrale percelen</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Flurstücke/Grundstücke (Katasterparzellen)</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/tn">Transport networks</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Transport networks</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Réseaux de transport</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Vervoersnetwerken</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Verkehrsnetze</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="">Hydrography</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Hydrography</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Hydrographie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Hydrografie</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Gewässernetz</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/ps">Protected sites</gmx:Anchor>
+      <gmd:PT_FreeText>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#EN">Protected sites</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#FR">Sites protégés</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#NL">Beschermde gebieden</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+        <gmd:textGroup>
+          <gmd:LocalisedCharacterString locale="#DE">Schutzgebiete</gmd:LocalisedCharacterString>
+        </gmd:textGroup>
+      </gmd:PT_FreeText>
+    </gmd:keyword>
+    <gmd:type>
+      <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+    </gmd:type>
+    <gmd:thesaurusName>
+      <gmd:CI_Citation>
+        <gmd:title>
+          <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+        </gmd:title>
+        <gmd:date>
+          <gmd:CI_Date>
+            <gmd:date>
+              <gco:Date>2008-06-01</gco:Date>
+            </gmd:date>
+            <gmd:dateType>
+              <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+            </gmd:dateType>
+          </gmd:CI_Date>
+        </gmd:date>
+      </gmd:CI_Citation>
+    </gmd:thesaurusName>
+  </gmd:MD_Keywords>
+</gmd:descriptiveKeywords>

@@ -1,0 +1,5 @@
+<gmd:function>
+        <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="view">view</gmd:CI_OnLineFunctionCode>
+</gmd:function>
+
+

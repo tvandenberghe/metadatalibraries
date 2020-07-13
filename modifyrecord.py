@@ -176,6 +176,27 @@ class modifyrecord(object):
         if elements:
             self.cswconnexion.updaterecord(csw_record.id, csw_record.xml)
     # ---------------------
+    '''Replace the element that matches with xpath from csw_record. Optionally specify the index that should be deleted, counting from zero (else all matches are deleted). Method for all records in CSW matching a certain keyword.'''
+
+    def append_records_xpath(self, do_when_keyword, xpath, xml_snippet):
+        self.cswconnexion.get_record_list(do_when_keyword)
+        for id in self.cswconnexion.identifiers:
+            xml = self.cswconnexion.getrecordxml(id)
+            csw_record = CSWRecord(xml, id)
+            self.append_csw_record_xpath(csw_record, xpath, xml_snippet)
+
+    '''Replace the element that matches with xpath from csw_record. Optionally specify the index that should be deleted, counting from zero (else all matches are deleted). Method matching the CswRecord'''
+
+    def append_csw_record_xpath(self, csw_record, xpath, xml_snippet):
+        elements = csw_record.xml.xpath(xpath, namespaces=CSWRecord.schemas)
+        for element in elements:
+            parent = element.getparent()
+            index = parent.index(element) + 1
+            csw_record.addtag(parent, xml_snippet, index)
+        if elements:
+            self.cswconnexion.updaterecord(csw_record.id, csw_record.xml)
+
+    # ---------------------
 
     def replace_records_identifier_with_fileidentifier(self, do_when_keyword):
         self.cswconnexion.get_record_list(do_when_keyword)
@@ -317,9 +338,6 @@ class modifyrecord(object):
         file_content = re.sub(r'^<(.*)>', r'<\1 ' + xmlns + '>', xml_string)
         return file_content
 
-        # ---------------------
-
-
     @staticmethod
     def main():
         # gn_username = raw_input("GeoNetwork username: ")
@@ -331,7 +349,51 @@ class modifyrecord(object):
 
         mr = modifyrecord(cswconnexion)
         mr.init_rdf()
-        # mr.print_keywords(descriptiveKeywords=["Reporting INSPIRE"])
+
+        '''Replace_records_hard'''
+        #mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'], regex_fro=rb'http://geoserver.bmdc.be', regex_to=rb'https://spatial.naturalsciences.be/geoserver')
+
+
+        '''INSPIRE keywords characterString -> Anchor '''
+        #mr.replace_records_xpath(do_when_keyword=["Area management/restriction/regulation zones and reporting units"], xml_snippet=mr.prep_input_file("input_inspire_kw/area_management.xml"), xpath="//gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword[gco:CharacterString='Area management/restriction/regulation zones and reporting units']")
+        #mr.replace_records_xpath(do_when_keyword=["Buildings"], xml_snippet=mr.prep_input_file("input_inspire_kw/buildings.xml"), xpath="//gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword[gco:CharacterString='Buildings']")
+        #mr.replace_records_xpath(do_when_keyword=["Environmental monitoring facilities"], xml_snippet=mr.prep_input_file("input_inspire_kw/environ_monit_facilities.xml"), xpath="//gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword[gco:CharacterString='Environmental monitoring facilities']")
+        #mr.replace_records_xpath(do_when_keyword=["Geology"], xml_snippet=mr.prep_input_file("input_inspire_kw/geology.xml"), xpath="//gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword[gco:CharacterString='Geology']")
+        #mr.replace_records_xpath(do_when_keyword=["Habitats and biotopes"], xml_snippet=mr.prep_input_file("input_inspire_kw/habitats_biotopes.xml"), xpath="//gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword[gco:CharacterString='Habitats and biotopes']")
+        #mr.replace_records_xpath(do_when_keyword=["Land use"], xml_snippet=mr.prep_input_file("input_inspire_kw/land_use.xml"), xpath="//gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword[gco:CharacterString='Land use']")
+        #mr.replace_records_xpath(do_when_keyword=["Protected sites"], xml_snippet=mr.prep_input_file("input_inspire_kw/protected_sites.xml"), xpath="//gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword[gco:CharacterString='Protected sites']")
+        #mr.replace_records_xpath(do_when_keyword=["Utility and governmental services"], xml_snippet=mr.prep_input_file("input_inspire_kw/utility_gov_services.xml"), xpath="//gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword[gco:CharacterString='Utility and governmental services']")
+
+        '''INSPIRE keywords - update keywords with Anchor'''
+        #mr.replace_records_xpath(do_when_keyword=['Geology'],xml_snippet=mr.prep_input_file("input_inspire_kw/geology.xml"),xpath="//gmd:descriptiveKeywords[gmd:MD_Keywords/gmd:keyword/gmx:Anchor[@xlink:href='http://inspire.ec.europa.eu/theme/ge']]")
+        #mr.replace_records_xpath(do_when_keyword=['National'],xml_snippet=mr.prep_input_file("input_national.xml"),xpath="//gmd:descriptiveKeywords[gmd:MD_Keywords/gmd:keyword/gmx:Anchor[@xlink:href='http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national']]")
+
+        '''IGN keywords'''
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/occupation_sol.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Area management/restriction/regulation zones and reporting units"], refuse_when_keyword="Land and natural area cover and use")
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/occupation_sol.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Buildings"], refuse_when_keyword="Land and natural area cover and use")
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/occupation_sol.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Environmental monitoring facilities"], refuse_when_keyword="Land and natural area cover and use")
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/occupation_sol.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Land use"], refuse_when_keyword="Land and natural area cover and use")
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/occupation_sol.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Protected sites"], refuse_when_keyword="Land and natural area cover and use")
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/occupation_sol.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Utility and governmental services"], refuse_when_keyword="Land and natural area cover and use")
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/donnees_environmentales.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Environmental monitoring facilities"], refuse_when_keyword="Environmental data")
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/geologie.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Geology"], refuse_when_keyword="Geology and physical relief")
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/geologie.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["marine geology"], refuse_when_keyword="Geology and physical relief")
+        # mr.append_records_at(xml_snippet=mr.prep_input_file("input_ign_kw/donnees_environmentales.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Habitats and biotopes"], refuse_when_keyword="Environmental data")
+
+        '''add missing function in transferOption protocol.'''
+        #mr.append_records_xpath(do_when_keyword=["Federal government"], xml_snippet=mr.prep_input_file("input_service_function/wfs_service_definition.xml"), xpath="//gmd:protocol[gco:CharacterString='OGC:WFS']")
+        #mr.append_records_xpath(do_when_keyword=["Federal government"], xml_snippet=mr.prep_input_file("input_service_function/wms_service_definition.xml"), xpath="//gmd:protocol[gco:CharacterString='OGC:WMS-1.3.0-http-get-capabilities']")
+        #mr.append_records_xpath(do_when_keyword=["Federal government"], xml_snippet=mr.prep_input_file("input_service_function/wfs_service_definition.xml"), xpath="//gmd:protocol[gco:CharacterString='WWW:DOWNLOAD-1.0-http--download']")
+        #mr.append_records_xpath(do_when_keyword=["Federal government"], xml_snippet=mr.prep_input_file("input_service_function/wms_service_definition.xml"), xpath="//gmd:protocol[gco:CharacterString='OGC:WMS']")
+
+        '''remove duplicate function element'''
+        #mr.remove_records_xpath(do_when_keyword=["Federal government"], xpath="//gmd:function[2]")
+
+        '''varia'''
+        #mr.replace_records_xpath(do_when_keyword=["Reporting INSPIRE"], xml_snippet=mr.prep_input_file("input_inspire_kw/usage_limitations.xml"), xpath="//gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useLimitation[gco:CharacterString='No conditions apply to access and use.']")
+
+
+
 
         # mr.append_records_at(xml_snippet=mr.prep_input_file("input_national.xml"), outer="identification", before= "descriptiveKeywords", do_when_keyword=["Reporting INSPIRE"],refuse_when_keyword="National")
         # mr.append_records_at(xml_snippet=mr.prep_input_file("input_federal.xml"), outer="identification", before="descriptiveKeywords", do_when_keyword=["Reporting INSPIRE"], refuse_when_keyword="Federal government")
@@ -346,7 +408,7 @@ class modifyrecord(object):
         # mr.remove_records_xpath(do_when_keyword=['Reporting INSPIRE'], xpath="//gmd:PT_FreeText[../gmx:Anchor]") #remove freetext within anchors
         #mr.replace_records_identifier_with_fileidentifier(do_when_keyword=['Reporting INSPIRE'])
 
-        # mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],fro='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#', to='http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#')
+        #mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],fro='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#', to='http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#')
         # mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],fro='http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#',to='http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#')
         # mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],fro='http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#',to='http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#')
         # mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],fro='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#', to='http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#')
@@ -355,7 +417,7 @@ class modifyrecord(object):
         # mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],fro='http://www.isotc211.org/2005/resources/codeList.xml#',to='http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#')
         # mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],fro='codeListValue="dataCentre"',to='codeListValue="theme"') #do a hard textual replace of the dataCentre codelistValue for keyword into theme
         # mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],fro='xlink:href="http://metadata.naturalsciences.be/',to='xlink:href="http://geonetwork.bmdc.be/geonetwork/srv/eng/csw?service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=')
-        # mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],regex_fro=r'(srv:operatesOn.*?)\.xml', regex_to=r'\1') #do a hard regex replace, in this case replace srv:operatesOn="file.xml" to srv:operatesOn="file
+        #mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'],regex_fro=r'(srv:operatesOn.*?)\.xml', regex_to=r'\1') #do a hard regex replace, in this case replace srv:operatesOn="file.xml" to srv:operatesOn="file
         # mr.modify_records_attribute(do_when_keyword=['Reporting INSPIRE'],xpath='//srv:serviceType/gco:LocalName',attribute='codeSpace',value='http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType')
         # mr.replace_records_hard(do_when_keyword=['Reporting INSPIRE'], fro='xsi:type="gml:TimePeriodType"',to='xsi:type="gml32:TimePeriodType"') #do a textual replace of all the occurrences of a into b
         #mr.remove_records_xpath(do_when_keyword=['Reporting INSPIRE'], xpath="//gmd:RS_Identifier/gmd:codeSpace") #remove the gmd:RS_Identifier/gmd:codeSpace elements in all the datasets having the "inspire reporting" keyword

@@ -1,0 +1,21 @@
+<gmd:resourceConstraints>
+    <gmd:MD_LegalConstraints>
+        <gmd:useLimitation xsi:type="gmd:PT_FreeText_PropertyType">
+            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</gmx:Anchor>
+            <gmd:PT_FreeText>
+                <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">no limitations to public access</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+                <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Aucune condition ne s’applique à l'accès et l'utilisation.</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+                <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#NL">geen beperkingen</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+                <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Es gelten keine Bedingungen zum Zugang und Nutzung.</gmd:LocalisedCharacterString>
+                </gmd:textGroup>
+            </gmd:PT_FreeText>
+        </gmd:useLimitation>
+    </gmd:MD_LegalConstraints>
+</gmd:resourceConstraints>
