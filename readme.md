@@ -23,7 +23,7 @@ Within the current python virtual environment
     
 Make the following change in the file metadatalibraries/env/lib/python3.6/site-packages/owslib/csw.py:
  
-Add the following in line 351:
+Add the following in line 451:
  
     self._setconstraint(node1, None, propertyname, keywords, bbox, cql, identifier)
     
