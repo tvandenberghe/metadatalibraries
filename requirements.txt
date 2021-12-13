@@ -1,4 +1,4 @@
-lxml==3.6.0
+lxml==4.6.5
 OWSLib==0.19.2
 pandas==0.24.2
 xlrd==1.0.0
